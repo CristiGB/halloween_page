@@ -1,0 +1,42 @@
+
+
+
+@media screen and (min-width: 1248px) {
+    .home__tree-left,
+    .home__tree-right{
+        width: 450px;
+    }
+
+    .home__img{
+        width: 600px;
+        margin-top: 3rem;
+    }
+    
+    .footer__tree-left{
+        left: 10%;
+    }
+}
+
+/*For 2k resolution*/
+
+@media screen and (min-width: 2048px) {
+    body{
+        zoom: 1.6;
+    }
+
+    .home__container{
+        position: relative;
+        max-width: 1400px;
+        overflow: hidden;
+    }
+
+    .home__tree-left,
+    .home__tree-right{
+        top: 5rem;
+    }
+
+    .footer__tree-left,
+    .footer__tree-right{
+        width: 300px;
+    }
+}

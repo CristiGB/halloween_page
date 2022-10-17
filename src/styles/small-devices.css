@@ -1,0 +1,30 @@
+/*----------- BreackPoints----------*/
+@media screen and (max-width: 340px) {
+
+    .container{
+        margin-inline: 1rem;
+    }
+
+    .home__title{
+        font-size: 1.5rem;
+    }
+    
+    .home__tree-left{
+        left: -4rem;
+    }
+    .home__tree-right{
+        right: -4rem;
+    }
+
+    .items__container{
+        grid-template-columns: 180px;
+    }
+
+    .party__img{
+        width: 200px;
+    }
+
+    .footer__content{
+        gap: 2.5rem;
+    }
+}

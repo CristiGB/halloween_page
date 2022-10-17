@@ -1,0 +1,130 @@
+.home{
+    position: relative;
+}
+
+.home .shape__light-small{
+    top: -3rem;
+    left: -3rem;
+}
+
+.home .shape__light-big{
+    bottom: 5rem;
+    right: -10px;
+}
+
+.home__container{
+    padding-top: 3.5rem;
+}
+
+.home__data{
+    text-align: center;
+}
+
+.home__title{
+    position: relative;
+    font-size: var(--biggest-font-size);
+    line-height: 140%;
+    width: max-content;
+    margin: 0 auto .5rem;
+}
+
+.home__title span{
+    display: block;
+    font-family: var(--second-font);
+    font-weight: initial;
+    color: var(--first-color);
+}
+
+.home__title-img{
+    width: 40px;
+    position: absolute;
+}
+
+.home__title-img-left{
+    top: -1rem;
+    left: -1.5rem;
+    transform: rotate(-15deg);
+    animation: animate-star-left 5s infinite ease-in-out;
+}
+
+.home__title-img-right{
+    bottom: 2.5rem;
+    right: -1.5rem;
+    transform: rotate(15deg);
+    animation: animate-star-right 5s infinite ease-in-out;
+}
+
+.home__description{
+    margin-bottom: 2.5rem;
+}
+
+.home__img{
+    width: 300px;
+    justify-self: center;
+    margin-top: 1.5rem;
+}
+
+.home__tree{
+    width: 120px;
+    position: absolute;
+    top: 18rem
+}
+
+.home__tree-left{
+    left: -2rem;
+}
+
+.home__tree-right{
+    right: -2rem;
+}
+
+/* Start animation*/
+
+@keyframes animate-star-left{
+    0%{
+        transform: scale(.7) rotate(-15deg);
+        opacity: .2;
+    }
+    50%{
+        transform: scale(1) rotate(-15deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(.7) rotate(-15deg);
+        opacity: .2;
+    }
+}
+
+
+@keyframes animate-star-right{
+    0%{
+        transform: scale(1) rotate(15deg);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(.7) rotate(15deg);
+        opacity: .2;
+    }
+    100%{
+        transform: scale(1) rotate(15deg);
+        opacity: 1;
+    }
+}
+
+
+/*----------Button----------*/
+
+.button{
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-weight: var(--font-semi-bold);
+    border-radius: 4rem;
+    background-color: var(--white-color);
+    color: var(--first-color);
+    transition: background .3s, color .3s;
+}
+
+.button:hover{
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
